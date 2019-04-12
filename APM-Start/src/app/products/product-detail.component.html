@@ -2,6 +2,45 @@
   <div class="card-header">
     {{pageTitle + ': ' + product.productName}}
   </div>
+  <div class='card-body'>
+    <div class="row">
+      <b class="col-sm-2">Product Name:</b>
+      <span class="col-sm-2">
+        {{product.productName}}
+      </span>
+    </div>
+    <div class="row">
+      <b class="col-sm-2">Product Code:</b>
+      <span class="col-sm-2">
+        {{product.productCode}}
+      </span>
+    </div>
+    <div class="row">
+      <b class="col-sm-2">Available:</b>
+      <span class="col-sm-2">
+        {{product.releaseDate}}
+      </span>
+    </div>
+    <div class="row">
+      <b class="col-sm-2">Price:</b>
+      <span class="col-sm-2">
+        {{product.price}}
+      </span>
+    </div>
+    <div class="row">
+      <b class="col-sm-2">5 Star Rating</b>
+      <span class="col-sm-2">
+        <pm-star [rating]='product.starRating'></pm-star>
+      </span>
+    </div>
+    <div class="row">
+      <span class="col-sm-12">
+        <img [src]='product.imageUrl'
+             [title]='product.Name'
+             />
+      </span>
+    </div>
+  </div>
   <div class='card-footer'>
     <button class='btn btn-outline-secondary'
             (click)='onBack()'
