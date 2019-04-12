@@ -5,31 +5,37 @@
   <div class='card-body'>
     <div class="row">
       <b class="col-sm-2">Product Name:</b>
-      <span class="col-sm-2">
+      <span class="col-sm-4">
         {{product.productName}}
       </span>
     </div>
     <div class="row">
       <b class="col-sm-2">Product Code:</b>
-      <span class="col-sm-2">
+      <span class="col-sm-4">
         {{product.productCode}}
       </span>
     </div>
     <div class="row">
       <b class="col-sm-2">Available:</b>
-      <span class="col-sm-2">
+      <span class="col-sm-4">
         {{product.releaseDate}}
       </span>
     </div>
     <div class="row">
+      <b class="col-sm-2">Description:</b>
+      <span class="col-sm-4">
+        {{product.description}}
+      </span>
+    </div>
+    <div class="row">
       <b class="col-sm-2">Price:</b>
-      <span class="col-sm-2">
+      <span class="col-sm-4">
         {{product.price}}
       </span>
     </div>
     <div class="row">
       <b class="col-sm-2">5 Star Rating</b>
-      <span class="col-sm-2">
+      <span class="col-sm-4">
         <pm-star [rating]='product.starRating'></pm-star>
       </span>
     </div>

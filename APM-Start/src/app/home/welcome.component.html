@@ -3,6 +3,10 @@
     {{pageTitle}}
   </div>
   <div class="card-body">
+    <div *ngIf='currentLocation'>
+      <p>Latitude: {{currentLocation.latitude}}</p>
+      <p>Longitude: {{currentLocation.longitude}}</p>
+    </div>
     <div class="container-fluid">
       <div class="text-center">
         <img src="./assets/images/logo.jpg"
